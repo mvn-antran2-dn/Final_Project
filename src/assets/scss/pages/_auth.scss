@@ -1,0 +1,20 @@
+.auth{
+  flex-direction: column;
+  .auth-title{
+    margin: 20px;
+    color: red;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    input{
+      margin-bottom: 10px;
+    }
+  }
+  .btn{
+    padding: 3px 3px;
+    background-color: aqua;
+    color: red;
+  }
+}

@@ -1,0 +1,28 @@
+.avatar-img{
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+}
+.account-title{
+  margin: 20px 30px;
+  line-height: 6;
+  font-size: 18px;
+  span{
+    line-height: 2;
+    color: red;
+  }
+}
+.btn-account{
+  margin-left: 20%;
+  background-color: #ffcccc;
+}
+.auth-title{
+  display: flex;
+  font-size: 30px;
+  line-height: 66px;
+  img{
+    height: 100px;
+    margin-top: -20px;
+  }
+}

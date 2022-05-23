@@ -1,0 +1,26 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e70d0d;
+  .logo {
+    width: 150px;
+    height: 48px;
+    margin: 8px 40px 16px 0;
+    background: white;
+  }
+  .ant-row-rtl .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+  }
+    .content-admin{
+      margin: 16px 60px 16px 0;
+      background-color: white;
+      color: #e70d0d;
+      &:hover{
+      background-color: #e70d0d;
+      color: white;
+      }
+    }
+}
+
+
