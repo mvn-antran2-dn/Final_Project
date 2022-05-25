@@ -3,7 +3,7 @@ import { useState } from "react";
 import { IMAGES } from "../../../assets/images";
 import { toast } from "react-toastify";
 import { NavLink } from "react-router-dom";
-import AddProducts from "../AddProduct";
+import ProductForm from "../../../components/modules/ProductForm";
 
 function Product() {
   const data = [
@@ -195,13 +195,12 @@ function Product() {
         "Sinh ra từ những cuộc đua trên sa mạc. Hoàn thiện cho mọi cung đường phiêu lưu Chiếc Africa Twin là một công cụ tuyệt hảo, sinh ra và hoàn thiện trong những điều kiện khắc nghiệt, với khả năng bám đường tối ưu, giúp người lái luôn cảm nhận được tiếp xúc lốp xe với mặt đất, mang lại sự tự tin cho người lái để chinh phục các chuyến hành trình dài.",
     },
   ];
-  //  localStorage.setItem("products", JSON.stringify(data));
-  const [dataSource, setDataSource] = useState(
-    JSON.parse(localStorage.getItem("products"))
-  );
+  // localStorage.setItem("products", JSON.stringify(data));
+  const listProduct = JSON.parse(localStorage.getItem("products"));
+  const [dataSource, setDataSource] = useState(listProduct);
 
   localStorage.setItem("products", JSON.stringify(dataSource));
-
+  const newData = {};
   const columns = [
     {
       title: "Name",
@@ -283,6 +282,7 @@ function Product() {
   //Create
   const [isModalvisible, setIsModalvisible] = useState(false);
   const [img, setimg] = useState("");
+
   const handleFileChange = (e) => {
     var file = e.target.files[0];
     var fileReader = new FileReader();
@@ -301,19 +301,16 @@ function Product() {
     setIsModalvisible(false);
   };
 
-  const onFinish = (values) => {
-    console.log("a");
-    const newProduct = { ...values, img };
+  const handleOnSubmit = (values) => {
+    const index = parseInt(dataSource[dataSource.length - 1].key) + 1;
+    console.log(index);
+    const newProduct = { ...values, img, key: index };
     const newdataSource = [...dataSource, newProduct];
     setDataSource(newdataSource);
     const productsLocal = JSON.parse(localStorage.getItem("products"));
-    productsLocal.push(newProduct);
     setIsModalvisible(false);
     toast.success("Submit Success!");
     localStorage.setItem("products", JSON.stringify(productsLocal));
-  };
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
   };
 
   //Delete
@@ -375,11 +372,18 @@ function Product() {
           onOk={onOk}
           className="manage-modal"
         >
-          <AddProducts
-            onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
-            handleFileChange={handleFileChange}
-          />
+          <div className="section-create-product">
+            <div className="container create-product">
+              <h3 className="title-create-product">Create Product</h3>
+              <ProductForm
+                onFinish={handleOnSubmit}
+                nameBtn="Submit"
+                onChange={handleFileChange}
+                newData={newData}
+                formName="form-add-product"
+              />
+            </div>
+          </div>
         </Modal>
       </div>
       <Table

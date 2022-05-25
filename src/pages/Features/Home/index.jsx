@@ -4,7 +4,6 @@ import { SiderBar } from "../../../components/Layout";
 import { Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Product from "../Product";
-import AddProducts from "../AddProduct";
 import UpdateProducts from "../UpdateProduct";
 import DetailProduct from "../DetailProduct";
 
@@ -44,9 +43,6 @@ export default function Home() {
           <Switch>
             <Route exact path="/home">
               <Product />
-            </Route>
-            <Route  path="/home/create">
-              <AddProducts />
             </Route>
             <Route exact path="/home/:key">
               <DetailProduct />
