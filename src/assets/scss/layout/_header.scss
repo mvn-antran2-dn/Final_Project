@@ -13,7 +13,7 @@
     margin: 16px 0 16px 24px;
   }
     .content-admin{
-      margin: 16px 60px 16px 0;
+      margin: 16px 0 16px 0;
       background-color: white;
       color: #e70d0d;
       &:hover{
@@ -22,5 +22,6 @@
       }
     }
 }
-
-
+.item-admin-img{
+  max-width: 20px;
+}

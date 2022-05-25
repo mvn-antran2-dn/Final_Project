@@ -33,4 +33,6 @@ export const IMAGES = {
   imgAdmin2: require('./icon-admin-2.png'),
   imgBanner: require('./icon-banner.png'),
   imgUser: require('./icon-user.png'),
+  imgExit: require('./icon-exit.png'),
+  imgLogout: require('./icon-logout.png'),
 }

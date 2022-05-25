@@ -48,6 +48,13 @@ const items = [
        <img className="action-siderbar-list" src={IMAGES.imgUser} alt="" /> 
     </NavLink>
   ),
+  getItem(
+    "Logout",
+    "6",
+    <NavLink activeClassName="active" to="/" className="logout" >
+      <img  src={IMAGES.imgLogout} alt="logout" className='action-siderbar-list logout '/>
+    </NavLink>
+  ),
 ];
 
 export default function SiderBar() {

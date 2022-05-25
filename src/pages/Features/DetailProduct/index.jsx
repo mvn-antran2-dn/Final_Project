@@ -21,7 +21,7 @@ function DetailProduct() {
         <div className="product-desc">
           <h3>{item.name}</h3>
           <p>
-            Price: <span >${item.price}</span>
+            Price: <span >{item.price} $</span> 
           </p>        
           <p>
             Quantity: <span>{item.quantity}</span>

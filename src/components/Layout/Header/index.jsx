@@ -1,9 +1,17 @@
 import { Button, Dropdown, Layout, Menu, Space } from 'antd';
-import { DownOutlined, LoginOutlined, UserOutlined} from '@ant-design/icons';
+import { DownOutlined} from '@ant-design/icons';
 import {NavLink} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import UserAuth from '../../../hooks/useAuth';
+import { IMAGES } from '../../../assets/images';
 
-const { Header } = Layout;
+
 export default function HeaderCP() {
+  const { logout } = UserAuth();
+  const { Header } = Layout;
+  const username = useSelector((state) => state.user.value);
+  const user = JSON.parse(localStorage.getItem("user"));
+  
   function handleMenuClick(e) {
     // message.info('Click on menu item.'); 
   }
@@ -17,14 +25,14 @@ export default function HeaderCP() {
                     Account Management
                   </NavLink>),
           key: '1',
-          icon: <UserOutlined />,
+          icon:  <img className="item-admin-img" src={IMAGES.imgAdmin2} alt="account" /> ,
         },
         {
-          label: ( <NavLink activeClassName="active" to="/" className="login">
-                       Logout
+          label: ( <NavLink activeClassName="active" to="/" className="logout" onClick={() => logout()}>
+                      Logout
                     </NavLink>),
           key: '2',
-          icon: <LoginOutlined />,
+          icon: <img  src={IMAGES.imgLogout} alt="logout" className='item-admin-img'/>,
         }
       ]}
     />
@@ -38,7 +46,13 @@ export default function HeaderCP() {
       <Dropdown overlay={menu} className='content-admin'>
         <Button>
           <Space>
-            ADMIN
+          {username !== "" ? (
+              <span>
+                {username?.username ? username.username : user?.username}
+              </span>
+            ) : (
+              <span></span>
+            )}
             <DownOutlined />
           </Space>
         </Button>

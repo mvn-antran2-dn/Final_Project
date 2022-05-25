@@ -1,3 +1,4 @@
+
 .avatar-img{
   border-radius: 50%;
   width: 330px;
@@ -6,23 +7,39 @@
 }
 .account-title{
   margin: 20px 30px;
-  line-height: 6;
-  font-size: 18px;
+  font-size: 20px;
   span{
     line-height: 2;
     color: red;
   }
 }
-.btn-account{
-  margin-left: 20%;
-  background-color: #ffcccc;
+.auth{
+  .auth-title{
+    display: flex;
+    margin: 40px;
+    font-size: 35px;
+    line-height: 66px;
+    img{
+      height: 100px;
+      margin-top: -20px;
+    }
+  }
 }
-.auth-title{
+
+.button-account{
   display: flex;
-  font-size: 30px;
-  line-height: 66px;
-  img{
-    height: 100px;
-    margin-top: -20px;
+  margin-bottom: 29%;
+  .btn-account{
+    margin-right: 20%;
+    border: none;
+    img{
+      width: 33px;
+      margin: -10px -16px;
+    }
+    span{
+      font-size: 20px;
+      margin: 0px 22px;
+      color: #e70d0d;
+    }
   }
 }

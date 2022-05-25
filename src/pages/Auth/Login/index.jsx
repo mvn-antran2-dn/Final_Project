@@ -2,18 +2,25 @@ import UserAuth from "../../../hooks/useAuth";
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { getInfoUser } from "../../../stores/userSlice";
 
 export default function Login() {
   const { login } = UserAuth();
-  const data = [
+  const dispatch = useDispatch();
+  const dataAdmin = [
+    {
+      username: "an.tran@monstar-lab.com",
+      password: "anpro3455",
+    },
     {
       username: "an.tran2@monstar-lab.com",
-      password: "anpro3455",
+      password: "anpro123",
     }
   ];
 
   const onFinish = (value) => {
-    const findInfo = data.find((item) => {
+    const findInfo = dataAdmin.find((item) => {
       return item.username === value.username && item.password === value.password;
     });
     if (!value.username || !value.password) {
@@ -25,6 +32,7 @@ export default function Login() {
     } else {
       toast.success("Logged in successfully");
       login(value.username, value.password);
+      dispatch(getInfoUser(findInfo));
     }
   };
   return (
