@@ -29,4 +29,8 @@ export const IMAGES = {
   imgCreate: require('./icon-create.png'),
   imgHome: require('./icon-home.png'),
   imgProdList: require('./icon-productlist.jpg'),
+  imgBack: require('./icon-back.png'),
+  imgAdmin2: require('./icon-admin-2.png'),
+  imgBanner: require('./icon-banner.png'),
+  imgUser: require('./icon-user.png'),
 }

@@ -1,0 +1,35 @@
+.product-detail{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  h3{
+    color: #e70d0d;
+  }
+  p{
+    font-size: 18px;
+    span{
+      color: #e70d0d;
+    }
+  }
+  .product-detail-img{
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    img{
+      transition: transform 0.5s;
+    }
+    img:hover{
+      transform: translate(30px,10px);     
+    }
+  }
+  .product-desc{
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+  }
+}
+.back-home{  
+  img{
+    width: 40px;
+  }
+}

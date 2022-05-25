@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import Product from "../Product";
 import AddProducts from "../AddProduct";
 import UpdateProducts from "../UpdateProduct";
+import DetailProduct from "../DetailProduct";
 
 
 const { Content} = Layout;
@@ -47,9 +48,12 @@ export default function Home() {
             <Route  path="/home/create">
               <AddProducts />
             </Route>
-            <Route  path="/home/update">
-              <UpdateProducts />
+            <Route exact path="/home/:key">
+              <DetailProduct />
             </Route>
+            <Route  path="/home/:key/update">
+              <UpdateProducts />
+            </Route>           
           </Switch>
         </Content>
       </Layout>

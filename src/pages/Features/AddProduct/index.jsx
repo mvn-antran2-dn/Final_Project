@@ -2,9 +2,9 @@ import React from 'react';
 import { Form, Input, InputNumber, Button} from 'antd';
 
 export default function AddProducts(props) { 
-  // const onFinish = props.onFinish;
-  // const onFinishFailed = props.onFinishFailed;
-  // const handleFileChange=props.handleFileChange;
+  const onFinish = props.onFinish;
+  const onFinishFailed = props.onFinishFailed;
+  const handleFileChange=props.handleFileChange;
   
   const layout = {
     labelCol: {

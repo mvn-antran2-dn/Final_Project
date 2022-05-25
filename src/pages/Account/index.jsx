@@ -7,10 +7,7 @@ import userAuth from '../../hooks/useAuth';
 
 
 export default function Account() {
- 
   let {login} = userAuth();
-
-
   return  login ? (
       <div className="container auth flex align-items-center">
         <p className="auth-title">Welcome <img src={IMAGES.imgAdmin} alt='Admin'/></p>

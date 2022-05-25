@@ -1,6 +1,5 @@
 import React from "react";
 import { Layout, Menu } from 'antd';
-import {  HomeOutlined, UnorderedListOutlined } from '@ant-design/icons';
 import { NavLink } from "react-router-dom";
 import { IMAGES } from "../../../assets/images";
 
@@ -26,26 +25,36 @@ const items = [
     "2",
     <NavLink activeClassName="active" to="/home">
        <img className="action-siderbar-list" src={IMAGES.imgProdList} alt="product-list" /> 
-    </NavLink>,
-    [
-      getItem(
-        <NavLink to="/home/create">
-          <div className="action-siderbar-item">
-            <img  src={IMAGES.imgCreate} alt="create" /> 
-            <p className="siderbar-span">Create Product</p> 
-          </div>{" "}
-        </NavLink>,
-        "3"
-      ),
-    ]
-  )
+    </NavLink>
+  ),
+  getItem(
+    "Account Management",
+    "3",
+    <NavLink activeClassName="active" to="/account">
+       <img className="action-siderbar-list" src={IMAGES.imgAdmin2} alt="account" /> 
+    </NavLink>
+  ),
+  getItem(
+    "Banner Management",
+    "4",
+    <NavLink activeClassName="active" to="">
+       <img className="action-siderbar-list" src={IMAGES.imgBanner} alt="" /> 
+    </NavLink>
+  ),
+  getItem(
+    "User Management",
+    "5",
+    <NavLink activeClassName="active" to="">
+       <img className="action-siderbar-list" src={IMAGES.imgUser} alt="" /> 
+    </NavLink>
+  ),
 ];
 
 export default function SiderBar() {
   return (
     <div className="Siderbar">
         <Sider 
-          width={200} className="site-layout-background" >
+          width={250} className="site-layout-background" >
         <Menu
           mode="inline"
           defaultSelectedKeys={["1"]}
