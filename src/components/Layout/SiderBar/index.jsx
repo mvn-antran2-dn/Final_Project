@@ -37,14 +37,14 @@ const items = [
   getItem(
     "Banner Management",
     "4",
-    <NavLink activeClassName="active" to="">
+    <NavLink activeClassName="active" to="/home">
        <img className="action-siderbar-list" src={IMAGES.imgBanner} alt="" /> 
     </NavLink>
   ),
   getItem(
     "User Management",
     "5",
-    <NavLink activeClassName="active" to="">
+    <NavLink activeClassName="active" to="/home">
        <img className="action-siderbar-list" src={IMAGES.imgUser} alt="" /> 
     </NavLink>
   ),
