@@ -1,6 +1,6 @@
 .page-login{
-  height: 835px;
-  min-width: 1280px;
+  height: 100vh;
+  max-width: 1280px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@
     img{
       position: absolute;
       width: 950px;
-      height: 837px;
+      height: 100vh;
       object-fit: cover;
       z-index: 1;
     }
@@ -16,7 +16,7 @@
   }
   .login-content{
     background-color: white;
-    width: 700px;
+    width: 400px;
     margin-right: 12%;
     z-index: 2;
     transform: skew(-20deg);
@@ -27,11 +27,10 @@
     border: 1px solid #e70d0d;
     box-shadow: #898b8f 10px 10px;
     position: absolute;
-    right: 1%;
+    right: -85%;
     bottom: 25%;
     width: 500px;
     height: 450px;
-    float: right;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
