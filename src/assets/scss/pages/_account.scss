@@ -28,7 +28,6 @@
 
 .button-account{
   display: flex;
-  margin-bottom: 29%;
   .btn-account{
     margin-right: 20%;
     border: none;
@@ -42,4 +41,7 @@
       color: #e70d0d;
     }
   }
+}
+.page-account{
+  min-height: calc(780px - 102px);
 }

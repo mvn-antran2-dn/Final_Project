@@ -158,15 +158,17 @@ function Product() {
   return (
     <div className="Product-list">
       <div className="Product-Top">
-        <h2 className="Title-dataSource">Products List</h2>
-        <AutoComplete
-          style={{
-            width: 250,
-          }}
-          className="input-search"
-        >
-          <Input.Search size="large" placeholder="Search" onChange={(e) => setSearch(e.target.value)}/>
-        </AutoComplete>
+        <div className="Top-title">
+          <h2 className="Title-dataSource">Products List</h2>
+          <AutoComplete
+            style={{
+              width: 200,
+            }}
+            className="input-search"
+          >
+            <Input.Search size="large" placeholder="Search" onChange={(e) => setSearch(e.target.value)}/>
+          </AutoComplete>
+        </div>
         <Button className="btn-create" type="primary" onClick={showModal}>
           <img className="btn-img-create" src={IMAGES.imgCreate} alt="create" />
           <p className="p-img-create">Create product</p>

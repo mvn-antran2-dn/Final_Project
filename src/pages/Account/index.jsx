@@ -18,7 +18,7 @@ export default function Account() {
   return  login ? (
       <div className="container auth flex align-items-center page-account">
         <p className="auth-title">Welcome <img src={IMAGES.imgAdmin} alt='Admin'/></p>
-        <div className='page-account'>      
+        <div className='section-account'>      
           <img  src={IMAGES.imgAvatar} alt="Avatar" className='avatar-img'/>
           <div className='account-title'>
             <p>Email: <span> {user.username}</span></p>

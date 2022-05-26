@@ -1,29 +1,24 @@
 .Product-Top{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   border: 1px solid #e0e0eb;
   padding: 15px 15px;
-  .Title-dataSource{
-    color: #e70d0d;
-  }
-  .input-search{
-    left: 230px;
-  }
+  .Top-title{
+    display: flex;
+    justify-content: space-between;
+    .Title-dataSource{
+      color: #e70d0d;
+    }
+  } 
   .ant-btn.ant-btn-primary {
+    width: 150px;
     height: 40px;
     border-radius: 3px;
     background-color: white;
     color: #e70d0d;
     border: 1px solid #e70d0d;
-    &:hover{
-      color: #34deeb;
-      background: white;
-      border: 1px solid #34deeb;
-      text-shadow: #34c0eb 1px 1px;
-    }
-  }
-  .btn-create{
     display: flex;
+    float: right;
     .btn-img-create{
       width: 30px;
       margin-top: 2px;
@@ -31,8 +26,13 @@
     .p-img-create{
       margin-top: 5px;
     }
-  }
-  
+    &:hover{
+      color: #34deeb;
+      background: white;
+      border: 1px solid #34deeb;
+      text-shadow: #34c0eb 1px 1px;
+    }
+  } 
 }
 .Product-table{
   width: 100%;
@@ -66,8 +66,10 @@
   border-color: #e70d0d;
 }
 .ant-input-search-button {
-  border-color: #e70d0d ;
+  border-color: white ;
+  border-left-color: #e70d0d ;
 }
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
-  color: #e70d0d;
+  color: white;
+  
 }

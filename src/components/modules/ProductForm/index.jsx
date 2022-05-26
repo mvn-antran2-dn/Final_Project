@@ -17,19 +17,6 @@ function ProductForm({ onFinish, nameBtn, onChange, newData, formName }) {
         autoComplete="off"
         className={formName}
       >
-        {/* <Form.Item
-          label="ID"
-          name="key"
-          initialValue={newData.key}
-          rules={[
-            {
-              required: true,
-              message: "Please enter product ID",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item> */}
         <Form.Item
           label="Name"
           name="name"
