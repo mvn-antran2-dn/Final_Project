@@ -4,6 +4,7 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { getInfoUser } from "../../../stores/userSlice";
+import DataProduct from "../../Features/Data";
 
 export default function Login() {
   const { login } = UserAuth();
@@ -36,10 +37,12 @@ export default function Login() {
     }
   };
   return (
+    
     <div className="page-login container">
       <div className="login-img">
         <img src='https://congtrinhnhaviet.vn/upload/images/thiet-ke-showroom-xe-may-tai-ha-noi-10-05.jpg'  alt='login-img'/>
       </div>
+      <DataProduct />
       <div className="login-content">
         <Form
           name="normal_login"
