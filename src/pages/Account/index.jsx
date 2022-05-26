@@ -11,7 +11,7 @@ export default function Account() {
   const { isLogger, logout } = userAuth();
 
   if (isLogger === true) {
-   const findInfo = dataAdmin.find((item) => {
+   dataAdmin.find((item) => {
       return (user.username === item.username )       
     });
   }
