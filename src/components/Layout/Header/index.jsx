@@ -11,14 +11,9 @@ export default function HeaderCP() {
   const { Header } = Layout;
   const username = useSelector((state) => state.user.value);
   const user = JSON.parse(localStorage.getItem("user"));
-  
-  function handleMenuClick(e) {
-    // message.info('Click on menu item.'); 
-  }
   const menu = (
     <Menu
       className='item-admin'
-      onClick={handleMenuClick}
       items={[
         {
           label: (<NavLink activeClassName="active" to="/account" className="account-user">

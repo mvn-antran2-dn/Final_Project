@@ -114,7 +114,6 @@ function Product() {
 
   const handleOnSubmit = (values) => {
     const index = parseInt(dataSource[dataSource.length - 1].key) + 1;
-    console.log(index);
     const newProduct = { ...values, img, key: index };
     const newdataSource = [...dataSource,newProduct];
     setDataSource(newdataSource);

@@ -31,7 +31,7 @@ function ProductEditing() {
       item.quantity = values.quantity,
       item.img = productUrl ? productUrl : newData.img
       )
-    ))
+    ));
     localStorage.setItem("products", JSON.stringify(dataSource));
     setDataSource(JSON.parse(localStorage.getItem("products")));
     toast.success('update success');

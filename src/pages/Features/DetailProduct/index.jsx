@@ -6,7 +6,6 @@ function DetailProduct() {
   const items = JSON.parse(localStorage.getItem("products") || []);
   const { key } = useParams();
   const item = items.find((product) => product.key.toString() === key);
-  console.log(item);
 
   return (
     <>

@@ -12,11 +12,11 @@ export default function Login() {
   const dataAdmin = [
     {
       username: "an.tran@monstar-lab.com",
-      password: "anpro3455",
+      password: "anpro123",
     },
     {
       username: "an.tran2@monstar-lab.com",
-      password: "anpro123",
+      password: "anpro3455",
     }
   ];
 
