@@ -18,13 +18,13 @@ function App() {
           <Account />
           <Footer />
         </PrivateRoute>
-        <Route path="/product">
+        <PrivateRoute path="/product">
           <Header />
           <Feature/>
           <Footer />
-        </Route>
+        </PrivateRoute>
         <Route path="/">
-          <Login />
+          <Login />      
           <ToastContainer
             position="top-center"
             autoClose={3000} />

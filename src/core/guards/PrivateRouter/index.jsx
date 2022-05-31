@@ -2,12 +2,12 @@ import userAuth from '../../../hooks/useAuth'
 import {Route,Redirect} from 'react-router-dom'
 
 function PrivateRoute({ children, ...rest }) {
-  let auth = userAuth();
+  let {isLogin} = userAuth();
   return (
     <Route
       {...rest}
       render={({ location }) =>
-      auth.isLogin ? (
+      isLogin ? (
           children
         ) : (
           <Redirect

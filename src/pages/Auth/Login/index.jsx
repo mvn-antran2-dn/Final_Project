@@ -5,9 +5,15 @@ import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { getInfoUser } from "../../../stores/userSlice";
 import DataProduct from "../../Features/Data";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Login() {
   const { login } = UserAuth();
+  const history = useHistory();
+  const user = localStorage.getItem("user");
+  if (user) {
+    history.push("/product");
+  }
   const dispatch = useDispatch();
   const dataAdmin = [
     {
