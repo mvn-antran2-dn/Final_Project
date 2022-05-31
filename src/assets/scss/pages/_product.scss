@@ -7,16 +7,17 @@
     display: flex;
     justify-content: space-between;
     .Title-dataSource{
-      color: #e70d0d;
+      color: #1a75ff;
     }
   } 
   .ant-btn.ant-btn-primary {
     width: 150px;
     height: 40px;
     border-radius: 3px;
-    background-color: white;
-    color: #e70d0d;
-    border: 1px solid #e70d0d;
+    color: #1a75ff;
+    background: white;
+    border: 1px solid #1a75ff;
+    
     display: flex;
     float: right;
     .btn-img-create{
@@ -27,10 +28,9 @@
       margin-top: 5px;
     }
     &:hover{
-      color: #34deeb;
-      background: white;
-      border: 1px solid #34deeb;
-      text-shadow: #34c0eb 1px 1px;
+      background-color: white;
+      color: #e70d0d;
+      border: 1px solid #e70d0d;
     }
   } 
 }
@@ -62,14 +62,4 @@
   display: none;
 }
 
-.ant-input-search .ant-input, .ant-input-search .ant-input:focus {
-  border-color: #e70d0d;
-}
-.ant-input-search-button {
-  border-color: white ;
-  border-left-color: #e70d0d ;
-}
-.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
-  color: white;
-  
-}
+

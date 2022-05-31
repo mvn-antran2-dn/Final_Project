@@ -1,6 +1,6 @@
 .title-update-product{
-  color: #e70d0d;
-  border-bottom: #e70d0d 1px solid;
+  color: #1a75ff;
+  border-bottom: #1a75ff 1px solid;
 }
 .form-update-product{
   border: #e70d0d 1px solid;
@@ -12,4 +12,14 @@
 }
 .ant-input-number.ant-input-number-in-form-item {
   width: 100%;
+}
+.btn-submit-update{
+  background-color: #e70d0d;
+  color: white;
+  margin: 0 -12%;
+  &:hover{
+    background-color: white;
+    color: #e70d0d;
+    border: #e70d0d 1px solid;
+  }
 }

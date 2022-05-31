@@ -70,10 +70,10 @@ function Product() {
       render: (record) => {
         return (
           <>
-            <NavLink activeClassName="active" to={`/home/${record.key}`}>
+            <NavLink activeClassName="active" to={`/product/${record.key}`}>
               <img className="action-product" src={IMAGES.imgView} alt="View" />
             </NavLink>
-            <NavLink activeClassName="active" to={`/home/${record.key}/update`}>
+            <NavLink activeClassName="active" to={`/product/${record.key}/update`}>
               <img className="action-product" src={IMAGES.imgEdit} alt="Edit" />
             </NavLink>
             <img
@@ -113,9 +113,9 @@ function Product() {
   };
 
   const handleOnSubmit = (values) => {
-    const index = parseInt(dataSource[dataSource.length - 1].key) + 1;
+    const index =  Math.floor(Math.random() * 10000);
     const newProduct = { ...values, img, key: index };
-    const newdataSource = [...dataSource,newProduct];
+    const newdataSource = [newProduct,...dataSource];
     setDataSource(newdataSource);
     const productsLocal = JSON.parse(localStorage.getItem("products"));
     setIsModalvisible(false);

@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import { Header, Footer} from "./components/Layout";
 import Login from "./pages/Auth/Login";
 import Account from './pages/Account';
-import PrivateRouter from './core/guards/PrivateRouter';
+import PrivateRoute from './core/guards/PrivateRouter';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -13,12 +13,12 @@ function App() {
     <>
     <Suspense fallback={<div>Loading...</div>}>     
       <Switch>
-        <PrivateRouter path="/account">
+        <PrivateRoute path="/account">
           <Header />
           <Account />
           <Footer />
-        </PrivateRouter>
-        <Route path="/home">
+        </PrivateRoute>
+        <Route path="/product">
           <Header />
           <Feature/>
           <Footer />

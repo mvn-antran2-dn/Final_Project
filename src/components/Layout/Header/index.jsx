@@ -34,7 +34,7 @@ export default function HeaderCP() {
   );
   return (
     <Header className="page-header">
-      <NavLink activeClassName="active" to="/home" className="logo">
+      <NavLink activeClassName="active" to="/product" className="logo">
         <img src='https://www.honda.com.vn/images/logo.svg' alt='' />
       </NavLink>
       

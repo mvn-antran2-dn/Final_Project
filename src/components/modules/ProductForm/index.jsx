@@ -85,12 +85,6 @@ function ProductForm({ onFinish, nameBtn, onChange, newData, formName }) {
           label="Description"
           name="description"
           initialValue={newData.description}
-          rules={[
-            {
-              required: true,
-              message: "Please enter product description",
-            }
-          ]}
         >
           <TextArea />
         </Form.Item>
@@ -100,7 +94,7 @@ function ProductForm({ onFinish, nameBtn, onChange, newData, formName }) {
             span: 16,
           }}
         >
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" htmlType="submit" className="btn-submit-update">
             {nameBtn}
           </Button>
         </Form.Item>

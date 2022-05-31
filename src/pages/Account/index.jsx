@@ -24,7 +24,7 @@ export default function Account() {
             <p>Email: <span> {user.username}</span></p>
             <div className='button-account' >
               <Button className='btn-account'>
-                <NavLink activeClassName="active" to="/home" >
+                <NavLink activeClassName="active" to="/product" >
                   <img  src={IMAGES.imgExit} alt="Exit" className='exit-img'/> <span>Go to home</span>
                 </NavLink>
               </Button>

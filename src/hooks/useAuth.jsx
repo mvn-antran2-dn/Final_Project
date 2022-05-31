@@ -20,7 +20,7 @@ const UserAuth = () => {
   const logout = () => {
     localStorage.removeItem('user');
     setIsLogin(false);
-    history.push('/login');
+    history.push('/');
   }
 
   return { isLogin, login, logout }

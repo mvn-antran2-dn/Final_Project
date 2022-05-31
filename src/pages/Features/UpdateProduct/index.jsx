@@ -35,13 +35,13 @@ function ProductEditing() {
     localStorage.setItem("products", JSON.stringify(dataSource));
     setDataSource(JSON.parse(localStorage.getItem("products")));
     toast.success('update success');
-    history.push("/home");
+    history.push("/product");
   };
   return (
     <>
      <div className='section-update-product'>
       <div className='container update-product'>
-        <NavLink to="/home" className="back-home">
+        <NavLink to="/product" className="back-home">
           <img src={IMAGES.imgHome} alt='product-home' /> 
         </NavLink>
         <h3 className='title-update-product'>Update Product</h3>   

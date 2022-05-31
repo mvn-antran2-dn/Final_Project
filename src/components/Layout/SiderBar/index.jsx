@@ -16,14 +16,14 @@ const items = [
   getItem(
     "Home",
     "1",
-    <NavLink activeClassName="active" to="/home">
+    <NavLink activeClassName="active" to="/product">
       <img className="action-siderbar-list" src={IMAGES.imgHome} alt="home" /> 
     </NavLink>
   ),
   getItem(
     "ProductsList",
     "2",
-    <NavLink activeClassName="active" to="/home">
+    <NavLink activeClassName="active" to="/product">
        <img className="action-siderbar-list" src={IMAGES.imgProdList} alt="product-list" /> 
     </NavLink>
   ),
@@ -37,22 +37,22 @@ const items = [
   getItem(
     "Banner Management",
     "4",
-    <NavLink activeClassName="active" to="/home">
+    <NavLink activeClassName="active" to="/product">
        <img className="action-siderbar-list" src={IMAGES.imgBanner} alt="" /> 
     </NavLink>
   ),
   getItem(
     "User Management",
     "5",
-    <NavLink activeClassName="active" to="/home">
+    <NavLink activeClassName="active" to="/product">
        <img className="action-siderbar-list" src={IMAGES.imgUser} alt="" /> 
     </NavLink>
   ),
   getItem(
     "Logout",
     "6",
-    <NavLink activeClassName="active" to="/" className="logout" >
-      <img  src={IMAGES.imgLogout} alt="logout" className='action-siderbar-list logout '/>
+    <NavLink activeClassName="active" to="/" className="logout"  >
+      <img  src={IMAGES.imgLogout} alt="logout" className='action-siderbar-list logout' />
     </NavLink>
   ),
 ];

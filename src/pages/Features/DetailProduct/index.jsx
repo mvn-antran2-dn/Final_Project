@@ -9,7 +9,7 @@ function DetailProduct() {
 
   return (
     <>
-      <NavLink to="/home" className="back-home">
+      <NavLink to="/product" className="back-home">
         <img src={IMAGES.imgHome} alt='product-home' /> 
       </NavLink>
       <h3 className='title-update-product'>Detail Product</h3>

@@ -41,13 +41,13 @@ export default function Home() {
           }}
         >
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/product">
               <Product />
             </Route>
-            <Route exact path="/home/:key">
+            <Route exact path="/product/:key">
               <DetailProduct />
             </Route>
-            <Route  path="/home/:key/update">
+            <Route  path="/product/:key/update">
               <UpdateProducts />
             </Route>           
           </Switch>

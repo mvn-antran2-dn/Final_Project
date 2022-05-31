@@ -9,7 +9,7 @@ export default function Feature() {
 
   return (
     <Switch>
-      <Route path="/home">
+      <Route path="/product">
         <Home />
         <ToastContainer
         position="top-center"
