@@ -12,7 +12,7 @@ const UserAuth = () => {
         localStorage.setItem('user', JSON.stringify({ username }));
         setUser({ username });
         setIsLogin(true);
-        history.push('/account');
+        history.replace('/account');
         res({ username });
       }, 1000);
     });
@@ -20,7 +20,7 @@ const UserAuth = () => {
   const logout = () => {
     localStorage.removeItem('user');
     setIsLogin(false);
-    history.push('/');
+    history.replace('/');
   }
 
   return { isLogin, login, logout }
