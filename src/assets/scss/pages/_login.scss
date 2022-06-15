@@ -5,7 +5,16 @@
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to bottom right, #12c2e9,  #c471ed, #f64f59);
-  // clear
+  // .login-img{
+  //   img{
+  //     position: absolute;
+  //     max-width: 950px;
+  //     height: 100vh;
+  //     object-fit: cover;
+  //     z-index: 1;
+  //     display: none;
+  //   }
+  // }
   .login-content{
     background-color: white;
     // width: 400px;
