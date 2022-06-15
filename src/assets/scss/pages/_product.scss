@@ -49,11 +49,11 @@
    .action-product{
     display: flex;
     flex-direction: column;
-     margin-left: 22%;
-     width: 50%;
-     &:hover{
-       transform: scale(1.5);
-     }
+    margin-left: 23%;
+    width: 50%;
+    &:hover{
+      transform: scale(1.5);
+    }
      
    }
    .ant-input-number{
