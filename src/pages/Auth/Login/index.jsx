@@ -12,7 +12,7 @@ export default function Login() {
   const history = useHistory();
   const user = localStorage.getItem("user");
   if (user) {
-    history.push("/product");
+    history.push("/account");  
   }
   const dispatch = useDispatch();
   const dataAdmin = [
@@ -45,9 +45,9 @@ export default function Login() {
   return (
     
     <div className="page-login container">
-      <div className="login-img">
+      {/* <div className="login-img">
         <img src='https://congtrinhnhaviet.vn/upload/images/thiet-ke-showroom-xe-may-tai-ha-noi-10-05.jpg'  alt='login-img'/>
-      </div>
+      </div> */}
       <DataProduct />
       <div className="login-content">
         <Form

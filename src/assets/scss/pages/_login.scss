@@ -1,33 +1,35 @@
 .page-login{
   height: 100vh;
-  max-width: 1280px;
+  // max-width: 1024px;
   position: relative;
   display: flex;
   justify-content: space-between;
+  background-image: linear-gradient(to bottom right, #12c2e9,  #c471ed, #f64f59);
   .login-img{
     img{
       position: absolute;
-      width: 950px;
+      max-width: 950px;
       height: 100vh;
       object-fit: cover;
       z-index: 1;
+      display: none;
     }
     
   }
   .login-content{
     background-color: white;
-    width: 400px;
-    margin-right: 12%;
-    z-index: 2;
-    transform: skew(-20deg);
-    border-left: 5px solid #e70d0d;
+    // width: 400px;
+    // margin-right: 12%;
+    // z-index: 2;
+    // transform: skew(-20deg);
+    // border-left: 5px solid #e70d0d;
   }
   .login-form {
-    transform: skew(20deg);
+    // transform: skew(20deg);
     border: 1px solid #e70d0d;
     box-shadow: #898b8f 10px 10px;
     position: absolute;
-    right: -85%;
+    right: 35%;
     bottom: 25%;
     width: 500px;
     height: 450px;
