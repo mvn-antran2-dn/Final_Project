@@ -18,11 +18,11 @@ function App() {
           <Account />
           <Footer />
         </PrivateRoute>
-        <PrivateRoute path="/product">
+        <Route path="/product">
           <Header />
           <Feature/>
           <Footer />
-        </PrivateRoute>
+        </Route>
         <Route path="/">
           <Login />      
           <ToastContainer
